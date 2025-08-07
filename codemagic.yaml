@@ -52,15 +52,15 @@ workflows:
         max_build_duration: 120
         instance_type: mac_mini_m2
         integrations:
-          app_store_connect: codemagic
+          app_store_connect: ecommune
         environment:
           ios_signing:
             distribution_type: app_store
-            bundle_identifier: io.codemagic.sample.reactnative
+            bundle_identifier: vnpt.qti.ecommune
           vars:
-            XCODE_WORKSPACE: "CodemagicSample.xcworkspace" # <-- Put the name of your Xcode workspace here
-            XCODE_SCHEME: "CodemagicSample" # <-- Put the name of your Xcode scheme here
-            APP_ID: 1555555551 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
+            XCODE_WORKSPACE: "cmreactnative.xcworkspace" # <-- Put the name of your Xcode workspace here
+            XCODE_SCHEME: "cmreactnative" # <-- Put the name of your Xcode scheme here
+            APP_ID: 6749612311 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
           node: v19.7.0
           xcode: latest
           cocoapods: default
